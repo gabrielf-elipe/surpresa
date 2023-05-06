@@ -1,0 +1,154 @@
+*{
+  box-sizing: border-box;
+}
+
+#cat {
+  width: 150px;
+  position: absolute;
+  margin: auto;
+  }
+
+#title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20pt;
+  color:rgb(26, 7, 7);
+  display: block;
+  text-align: center;
+  margin: 0.3em;
+}
+
+body {
+  background:linear-gradient(to left top, rgb(24, 3, 3), rgb(190, 19, 19));
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  overflow-y: auto; /* barras de rolagem apenas quando necessário */
+  text-align: justify;
+}
+.image-invisible {
+  opacity: 0;
+  transition: opacity 2s ease; /* Adiciona uma transição suave */
+  margin: 88px auto 88px auto ;
+  display: block;
+  
+}
+.image-visible {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.background-footer{
+  background-image: url(arquivos/WhatsApp\ Image\ 2023-04-28\ at\ 21.26.52.jpeg);
+}
+
+.explosao {
+  pointer-events: none;
+  position: absolute;
+  width: 18px;
+  height: 14.5px;
+  background: url(arquivos/heart_png.png);
+  background-size: cover;
+  color: white;
+  animation: explosao 2.5s linear infinite;
+  opacity: 50%;
+
+}
+
+p {
+  font-family: Arial, monospace;
+  text-align: justify;
+  margin: 0.8em;
+}  
+
+img {
+  margin-bottom: 5rem;
+}
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #ea00ff;
+  font-size: 2em;
+}
+svg{
+  display: inline;
+  position: absolute;
+}
+
+a {
+  display: none;
+  position: fixed;
+  color: black;
+  font-family: sans-serif;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 390px;           /* Footer height */
+  padding: 12.800px;
+  border-top: groove;
+  background:linear-gradient(to left bottom, rgb(24, 3, 3), rgb(190, 19, 19));;
+  border-color: rgba(95, 22, 22, 0.089)
+}
+
+#image{
+  text-align: center;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+@keyframes explosao {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+#abrirPopUp {
+  display: block;
+  position: absolute;
+  top: 48em;
+  margin-left: 12.800px;
+  z-index: 10;
+}
+
+#formularioPopUp {
+  display: none;
+  position: fixed;
+  top: 24em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:linear-gradient(to bottom, rgb(24, 3, 3), rgb(112, 40, 40));
+  padding: 20px;
+  outline: auto 100px black ;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+#formularioPopUp h2 {
+  margin-top: 0;
+}
+
+#fecharPopUp {
+  margin-top: 10px;
+}
+
+#pinvisivel {
+  display: none;
+}

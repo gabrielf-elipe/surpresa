@@ -15,17 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
   var abrirPopUp = document.getElementById('abrirPopUp');
   var formularioPopUp = document.getElementById('formularioPopUp');
   var fecharPopUp = document.getElementById('fecharPopUp');
+  var enviarPopUp = document.getElementById('enviarPopUp')
   abrirPopUp.addEventListener('click', function() {
     formularioPopUp.style.display = 'block';
   });
   fecharPopUp.addEventListener('click', function() {
     formularioPopUp.style.display = 'none';
   });
+  enviarPopUp.addEventListener('click', function() {
+    formularioPopUp.style.display = 'none';
+  });
 }); 
 
 function logar(){
   var senha = document.getElementById('senha').value;
-  if (senha == "Ituano"){
+  if (senha == "pfvcarlosbaiaomeadota"){
     var minhaImagem = document.getElementById('image');
     var footerBackground = document.getElementById('footer');
   minhaImagem.classList.add('image-visible');

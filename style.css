@@ -53,7 +53,7 @@ body {
   color: white;
   animation: explosao 2.5s linear infinite;
   opacity: 50%;
-
+  z-index: 9999;
 }
 
 p {
